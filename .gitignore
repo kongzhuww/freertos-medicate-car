@@ -1,0 +1,53 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# IDEs / editor
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+
+# Build outputs and object files
+OBJ/
+DebugConfig/
+Build/
+*.o
+*.obj
+*.d
+*.crf
+*.lst
+*.map
+
+# Binary / firmware
+*.bin
+*.hex
+*.elf
+*.axf
+
+# Keil / project files (ignore user/backups but keep source project if desired)
+*.uvprojx.user
+*.uvoptx.user
+*.bak
+
+# FreeRTOS / RTOS temporary
+*.d
+
+# Python
+__pycache__/
+*.pyc
+
+# Misc
+*.zip
+*.7z
+*.rar
+*.exe
+
+# Windows shortcuts
+*.lnk
+
+# Keep this file tracked
+# End of .gitignore
