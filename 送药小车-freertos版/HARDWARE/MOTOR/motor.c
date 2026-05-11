@@ -103,6 +103,18 @@ void TURN_RIGHT(void)
     
 }
 
+
+void TURN_FORWARD(void)
+{
+    // 直行走过十字路口区，关闭PID
+    // 使用你平时转弯的前移速度（18）
+    Motor1_Set(18);
+    Motor2_Set(18);
+    
+    // 延时大约 700~800ms（和你的转弯前移时间差不多，确保车头越过横向黑线）
+    vTaskDelay(pdMS_TO_TICKS(750)); 
+}
+
 void TURN_AROUND(void)
 {
     Motor1_Set(18);

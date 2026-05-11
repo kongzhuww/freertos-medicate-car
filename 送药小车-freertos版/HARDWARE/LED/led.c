@@ -32,4 +32,45 @@ void LED_Init(void)
 	
 }
 
+void LED_GREEN_ON(void)
+{
+   
+  GPIOC->ODR|=1<<0;    //???????????
+    // vTaskDelay(pdMS_TO_TICKS(100));
+  //GPIOC->ODR &= ~(1<<0);   //按位清零该位，关闭 LED
+}
+
+void LED_GREEN_OFF(void)
+{
+  GPIOC->ODR &= ~(1<<0);   //按位清零该位，关闭 LED
+}
+
+
+
+//-----------------------------------------------------------------------------------
+void LED_YELLOW_ON(void)
+{
+ GPIOC->ODR|=1<<1;    //???????????
+    //delay_ms(500);
+  //GPIOC->ODR &= ~(1<<1);   //按位清零该位，关闭 LED
+}
+
+void LED_YELLOW_OFF(void)
+{
+  GPIOC->ODR &= ~(1<<1);   //按位清零该位，关闭 LED
+}
+
+//-----------------------------------------------------------------------------------
+void LED_RED_ON(void)
+{
+  GPIOC->ODR|=1<<2;    //???????????
+    //delay_ms(500);
+ // GPIOC->ODR &= ~(1<<2);   //按位清零该位，关闭 LED
+}
+
+void LED_RED_OFF(void)
+{
+  GPIOC->ODR &= ~(1<<2);   //按位清零该位，关闭 LED
+}
+
 
